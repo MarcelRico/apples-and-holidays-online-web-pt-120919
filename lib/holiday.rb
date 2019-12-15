@@ -79,7 +79,7 @@ def all_holidays_with_bbq(holiday_hash)
     puts "Key: #{k}: #{v.values[0]}"
     v.values.length.times do |idx|
       if v.values[idx].include?("BBQ")
-        arr << k.key[idx]
+        arr << v.keys[idx]
       end
     end
   end
