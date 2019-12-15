@@ -75,17 +75,15 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   
   arr = []
-holiday_hash.each do |k,v|
-  puts "Key: #{k}: #{v.values[0]}"
-  v.values.length.times do |idx|
-    if v.values[idx].include?("BBQ")
-      arr << k
+  holiday_hash.each do |k,v|
+    puts "Key: #{k}: #{v.values[0]}"
+    v.values.length.times do |idx|
+      if v.values[idx].include?("BBQ")
+        arr << k
+      end
     end
   end
-end
-
-
-arr
+  arr
 
 end
 
