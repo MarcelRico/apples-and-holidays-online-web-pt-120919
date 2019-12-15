@@ -59,12 +59,9 @@ def all_supplies_in_holidays(holiday_hash)
   #   Fourth Of July: Fireworks, BBQ
   # etc.
   
-  arr = []
-  holiday_hash.values.length.times do |idx|
-    arr << holiday_hash.values[idx].values.flatten
+  holiday_hash.each do |key,value|
+    
   end
-
-  arr.flatten
 end
 
 def all_holidays_with_bbq(holiday_hash)
